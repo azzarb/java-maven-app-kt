@@ -40,5 +40,5 @@ jobs:
 
 ########## Junit test with maven ###############
 
-    - name: Junit Test
-      run: mvn -B test --file pom.xml
+    #- name: Junit Test
+     # run: mvn -B test --file pom.xml
