@@ -37,5 +37,8 @@ jobs:
       with:
        name: javamavenbuildartifacts
        path: staging
-    
-     
+
+########## Junit test with maven ###############
+
+    - name: Junit Test
+      run: mvn -B test --file pom.xml
