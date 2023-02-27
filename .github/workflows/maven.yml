@@ -40,5 +40,15 @@ jobs:
 
 ########## Junit test with maven ###############
 
-    #- name: Junit Test
-     # run: mvn -B test --file pom.xml
+    - name: Junit Test
+      run: mvn -B test --file pom.xml
+##########  Jacoco Report ###########
+
+    - name: Add coverage to PR
+      id: jacoco
+      uses: madrapps/jacoco-report@v1.3
+      with:
+          paths: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
+          token: ${{ secrets.GITHUB_TOKEN }}
+          min-coverage-overall: 40
+          min-coverage-changed-files: 60
