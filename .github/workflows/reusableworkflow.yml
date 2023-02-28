@@ -1,7 +1,6 @@
 name: reusable workflow
 on:
-  workflow_call:
-
+  workflow_dispatch
 jobs:
   calling-maven-from-same-path:
     uses: ./.github/workflows/maven.yml
