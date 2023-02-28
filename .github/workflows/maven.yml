@@ -44,6 +44,12 @@ jobs:
     - name: Junit Test
       run: mvn -B test --file pom.xml
       
+    - name: Upload JaCoCo coverage report
+      uses: actions/upload-artifact@v2
+      with:
+        name: jacoco-report
+        path: target/site/jacoco/ 
+      
 ##########  Build docker image and push into repo ###########
  
     
