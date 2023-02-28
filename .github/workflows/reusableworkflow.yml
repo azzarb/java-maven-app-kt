@@ -3,5 +3,5 @@ on:
   workflow_dispatch
 
 jobs:
-  calling maven from same path:
+  calling-maven-from-same-path:
     uses: ./.github/workflows/maven.yml
