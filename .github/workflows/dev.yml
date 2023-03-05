@@ -27,5 +27,5 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
          token: ${{ secrets.MY_GITHUB_TOKEN }}
-         repository: azzarb/mygitactionS
+         repository: azzarb/java-hello-world-with-maven
          event-type: my-triger-event
