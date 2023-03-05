@@ -26,6 +26,6 @@ jobs:
       - name: trigger the workflow in other repo
         uses: peter-evans/repository-dispatch@v2
         with:
-         token: ${{ secrets.REPO_ACCESS_TOKEN }}
+         token: ${{ secrets.MY_GITHUB_TOKEN }}
          repository: azzarb/mygitactionS
          event-type: my-triger-event
