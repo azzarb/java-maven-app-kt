@@ -1,4 +1,4 @@
-#### Environment Variables ####
+#### Environment Variables #####
 env:
   COVERAGE_THRESHOLD: 20
   CODE_SMELLS_THRESHOLD: 200
